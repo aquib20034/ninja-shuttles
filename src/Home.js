@@ -2,10 +2,7 @@
 import React, { useState } from 'react';
 import MyForm from './Form';
 import { Button } from "react-bootstrap";
-
 const { ethers } = require("ethers");
-
-
 
 // import { ethers } from "ethers";
 // const provider = new ethers.BrowserProvider(window.Ethereum)
@@ -20,7 +17,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
   const connectwalletHandler = () => {
     console.log("connectwalletHandler")
       if (window.ethereum) {
-        console.log("if")
+        // console.log("if")
           provider.send("eth_requestAccounts", []).then(async () => {
               await accountChangedHandler(provider.getSigner());
           })
@@ -49,7 +46,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
 
   const isAddressWhiteListed = async (address) => {
     try {
-      const apiUrl = 'http://ninja.onezerowaves.com';
+      const apiUrl = 'http://api.test';
 
       const apiLink = apiUrl+`/?address=${encodeURIComponent(address)}`;
       console.log("apiLink", apiLink)
@@ -102,7 +99,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
 
     try {
       // Assuming you have an API endpoint to send the data
-      const apiUrl = 'http://ninja.onezerowaves.com';
+      const apiUrl = 'http://api.test';
       
       const response = await fetch(apiUrl, {
         method: 'POST',
