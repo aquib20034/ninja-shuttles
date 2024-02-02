@@ -1,0 +1,314 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body {
+     font-family: 'Arial';
+     overflow-x: hidden;
+}
+
+
+.va-ctr {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.header {
+    padding: 20px 0;
+}
+
+.App-logo {
+    max-width: 50%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social {
+    display: inline-block;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social li:last-child {
+    text-align: right;
+}
+
+.banner {
+    padding: 140px 0;
+    background-size: cover;
+    background-position: center top;
+    background-color: #e0e0de;
+}
+
+.banner h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mbpx-20 {
+    margin-bottom: 20px!important;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+}
+
+.main-text {
+    padding: 50px 0;
+}
+
+.main-text h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.form-sec {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.form-sec .btn-primary {
+    margin-bottom: 20px;
+}
+
+.form-sec label {
+    display: block;
+}
+
+.form-sec input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+}
+
+.form-sec .btn-primary {
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+.main-sec {
+    margin-bottom: 80px;
+}
+
+.main-sec h2 {
+     font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.main-sec p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.btm-sec {
+    background-color: #d1d1d1;
+    padding: 60px 0;
+}
+
+.btm-sec h2 {
+     font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.btm-sec p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.form-sec {
+    margin-bottom: 50px;
+    background-color: #e1e1e1;
+}
+
+.mbpx-40 {
+    margin-bottom: 60px;
+}
+
+.footer {
+    padding: 25px 0;
+}
+
+.footer p {
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        max-width: 1500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .va-ctr {
+        display: block;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header nav {
+        margin: 10px 0;
+    }
+
+    .header .text-right {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .text-right {
+        text-align: center;
+    }
+
+    .footer p {
+        margin-bottom: 15px;
+    }
+}
