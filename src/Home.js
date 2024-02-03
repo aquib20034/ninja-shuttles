@@ -46,7 +46,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
 
   const isAddressWhiteListed = async (address) => {
     try {
-      const apiUrl = 'http://api.test';
+      const apiUrl = 'https://ninja.onezerowave.com/api';
 
       const apiLink = apiUrl+`/?address=${encodeURIComponent(address)}`;
       console.log("apiLink", apiLink)
@@ -64,6 +64,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
         setIsActive(true);
         return true; // Address is whitelisted
       } else {
+        alert("You are not whitelisted");
         setIsActive(false);
         return false; // Address is not whitelisted
       }
@@ -99,7 +100,7 @@ const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(
 
     try {
       // Assuming you have an API endpoint to send the data
-      const apiUrl = 'http://api.test';
+      const apiUrl = 'https://ninja.onezerowave.com/api/';
       
       const response = await fetch(apiUrl, {
         method: 'POST',
